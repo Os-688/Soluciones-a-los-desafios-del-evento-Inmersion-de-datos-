@@ -15,3 +15,7 @@ En esta parte se creo una nueva series usando la funcion .mean sobre el anterior
 
 Por ultimo se uso plot.bar para crear la grafica de los barrios y sus promedios.
 ![Tercera imagen de solucion 1, la antelacion contiene mas informacion](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/ebb0c40cf619558bcb42c0f33e938a2f94142b9c/Assets/soluci%C3%B3n_1/CapturaV1.3.PNG)
+
+En esta imagen de abajo se realizaron busquedas como baños min, baños mean, banos len(Para obtener el total de filas de baños), Habitaciones max(Para obtener el numero maximo de habitaciones). Tambien se podria haber usado sum sobre baños para obtener el total de baños. Hice promedio_area value counts para asegurarme que estan correctos los datos.
+
+![Image text](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/2faf30b878405e33d6d02ecfd19a1a490f60ea26/Assets/soluci%C3%B3n_1/CapturaV1.4.PNG)
