@@ -11,3 +11,7 @@ En esta parte realice un nuevo Dataframe de agrupaciones con la funcion group by
 
 ![Segunda imagen de solucion 1, la antelacion contiene mas informacion](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/d03975b527203f4c9b4089e986dd6cc66c13f995/Assets/soluci%C3%B3n_1/CapturaV1.2.PNG)
 
+En esta parte se creo una nueva series usando la funcion .mean sobre el anterior dataframe. La funcion .mean devuelve la media de valores, pero use el atributo numeric_only para que solo utilizara los valores numericos, pero realmente no es necesario. Devuelve una series con indices como barrios y con la unica columna area como la media de area. Cuando se realiza un group by cualquier tipo de funcion como mean, max, min se realizara por cada columna por la cual fue agrupada.
+
+Por ultimo se uso plot.bar para crear la grafica de los barrios y sus promedios.
+![Tercera imagen de solucion 1, la antelacion contiene mas informacion](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/ebb0c40cf619558bcb42c0f33e938a2f94142b9c/Assets/soluci%C3%B3n_1/CapturaV1.3.PNG)
