@@ -94,7 +94,27 @@ Inicie probando el modelo svc pero utilice los mismos datos que los profesores, 
    
  ![Prueba del modelo SVC con datos del tipo flotante o continuous](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/daaccbcd2c88503d3d57de9f5c5cd199a4bef59e/Assets/soluci%C3%B3n_1/CapturaV4.2.PNG)
 
-En esta parte se hizo un modelo SVC entrenandolo y probandolo con los datos de precio por millon, para poder hacer esto se usaron funciones de la biblioteca scikit-learn para transformar estos datos a multiclass y poder usarlos en este modelo de clasificacion, se puede observar en la variable code.
+En esta parte se hizo un modelo SVC entrenandolo y probandolo con los datos de precio por millon, para poder hacer esto se usaron funciones de la biblioteca scikit-learn para transformar estos datos continuous (de regresion) a multiclass y poder usarlos en este modelo de clasificacion, se puede observar en la variable code.
 Por lo demas se aprovecho la funcion train_test_split para dividir los datos de entrenamiento y de prueba, despues se escalaron. Por ultimo se usaron los datos para entrenar y probar el modelo con una funcion para mostrar la precision. En esta ultima parte se uso accuracy para lograrlo.
 
   ![Prueba del modelo SVC con datos del tipo flotante o continuous](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/daaccbcd2c88503d3d57de9f5c5cd199a4bef59e/Assets/soluci%C3%B3n_1/CapturaV4.3.PNG)
+
+Use un dummyClassifier para crear una baseline para comparar el accuracy con estas predicciones, esto se repetira en cada prueba del modelo SVC. 
+
+  ![Base line con dummy ](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/3f809c147388dfde9055b360c1c0ced8ff068121/Assets/soluci%C3%B3n_1/CapturaV4.4.PNG)
+
+  Este es el inicio de la siguiente prueba con datos Multiclass, pero con un dato basado en Precio millon (Este dato es division precio y puede ser agrupado) y sus conclusiones. Que resultaron ser en resumen que los datos multiclass se reserven para estos modelos clasificatorios u otros y  los datos continuous como los tipo double para modelos de regresion, porque tienen un mayor indice de precision. Esto tiene mucho sentido por que tiene relacion con el objetivo por el que fueron diseñados.
+
+ ![ conclusiones con datos Multiclass](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/3f809c147388dfde9055b360c1c0ced8ff068121/Assets/soluci%C3%B3n_1/CapturaV4.5.PNG)
+
+Es el mismo modelo que se presento arriba pero con la distinción de que no se necesitan transformar los datos a multiclass. Se utiliza la variable division precio, porque es una variable hecha a partir de precio millones. Este modelo sirve de comparacion con el anterior, para probar la eficacia del modelo con estos dos tipos de datos. En las conclusiones esta el desenlace al respecto.
+
+  ![Modelo SVC con datos division precio](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/3f809c147388dfde9055b360c1c0ced8ff068121/Assets/soluci%C3%B3n_1/CapturaV4.6.PNG)
+
+La baseline de este modelo:
+  
+   ![Dummy classifier de division precio](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/3f809c147388dfde9055b360c1c0ced8ff068121/Assets/soluci%C3%B3n_1/CapturaV4.7.PNG)
+
+Realizo un mapa de calor para poder distinguir las variables que usare para los datos del nuevo modelo. Este nuevo modelo lo hago con la intencion de poder decidir los datos que tendra ya que no pude hacerlo con division precio. La razón de ello es que el mapa de calor no la detecta. Los datos estan elegidos para habitaciones y tienen la mayor correlacion.
+
+   ![Mapa de calor](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/3f809c147388dfde9055b360c1c0ced8ff068121/Assets/soluci%C3%B3n_1/CapturaV4.8.PNG)
