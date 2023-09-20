@@ -135,3 +135,13 @@ Y así se termino la creación de esta nueva variable.
 
 ![Modelo con los nuevos datos](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/da2de84bd02ded3219605a21d470b32341dbb35b/Assets/soluci%C3%B3n_1/CapturaV4.10.PNG)
 
+*Probar predicciones para casos reales*
+Me decide a hacerlo con el ultimo modelo que hice: Modelo SVC prediciendo habitaciones.
+Cree una lista de valores con 4 pruebas para el modelo. Dos variables:  los datos para clasificar y los resultados de clasificación.
+Calculando el porcentaje de acierto el metodo accuracy y escribiendo en pantalla. El resultado no es un porcentaje realmente porque falto multiplicar por 100. El resultado seria entorno al 25%. Aunque he de decir que esperaba más y explico en la conclusión.
+
+![Prueba de predicciones con el modelo SVC habitaciones](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/19b434172c8a6f2e79d0447aed200206d79f2bc9/Assets/soluci%C3%B3n_1/CapturaV4.11.PNG)
+
+Aca en la conclusion abordo un poco mas sobre el problema y en resumen: 
+Es posiblemente por la falta de estratificar los datos para la prueba y entrenamiento. Sintetizando no podia estratificar por que no lo permitian los datos del modelo por un error.
+![Conclusiones de las pruebas con el modelo SVC habitaciones](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/19b434172c8a6f2e79d0447aed200206d79f2bc9/Assets/soluci%C3%B3n_1/CapturaV4.12.PNG)
