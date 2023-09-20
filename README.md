@@ -73,3 +73,28 @@ Con esta nueva grafica utilice valor m2 millon y respete los demas datos de la a
 Resumen:
 
 ![Resumen de los dos desafios](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/c32dcd084574f1252d18f68dc84499680609ff5a/Assets/soluci%C3%B3n_1/CapturaV3.1.PNG)
+
+## Cuarta Clase:
+
+**Mis respuestas de la clase 4 son:**
+
+   Desafios:
+    
+    Probar con otros modelos de ML;
+    Trabajar más con los datos y crear nuevas variables;
+    Probar predicciones para casos reales;
+
+   *Solucion: probar con otros modelos de ML:*
+   
+Aqui se encuentran el resumen y conclusiones a los que llegue despues de usar un modelo svc, compararlo con el modelo de regresion y probar/entender el tipo de datos con los que trabajan.
+   
+   ![Resumen del codigo y comparacion de datos, modelos](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/daaccbcd2c88503d3d57de9f5c5cd199a4bef59e/Assets/soluci%C3%B3n_1/CapturaV4.1.PNG)
+
+Inicie probando el modelo svc pero utilice los mismos datos que los profesores, lo cual fue un error. La razon de ello la explico en las conclusiones, pero seria porque el tipo flotante no es el dato por el cual fueron diseñados los modelos de clasificacion. 
+   
+ ![Prueba del modelo SVC con datos del tipo flotante o continuous](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/daaccbcd2c88503d3d57de9f5c5cd199a4bef59e/Assets/soluci%C3%B3n_1/CapturaV4.2.PNG)
+
+En esta parte se hizo un modelo SVC entrenandolo y probandolo con los datos de precio por millon, para poder hacer esto se usaron funciones de la biblioteca scikit-learn para transformar estos datos a multiclass y poder usarlos en este modelo de clasificacion, se puede observar en la variable code.
+Por lo demas se aprovecho la funcion train_test_split para dividir los datos de entrenamiento y de prueba, despues se escalaron. Por ultimo se usaron los datos para entrenar y probar el modelo con una funcion para mostrar la precision. En esta ultima parte se uso accuracy para lograrlo.
+
+  ![Prueba del modelo SVC con datos del tipo flotante o continuous](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/daaccbcd2c88503d3d57de9f5c5cd199a4bef59e/Assets/soluci%C3%B3n_1/CapturaV4.3.PNG)
