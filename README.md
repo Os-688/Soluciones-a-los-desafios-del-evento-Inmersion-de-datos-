@@ -58,3 +58,18 @@ En este segundo desafio cree la variable m2 (Nota: Esta variable no la dividi po
 Con esta nueva grafica utilice valor m2 millon y respete los demas datos de la anterior. Use la paleta de Colores Mako y agregue color a los fondos para resaltar la informacion y mejorar el visual. Las labels estan inclinadas de una forma un poco distinta a como me enseñaron en esta aula. Hubiera querido modificar los colores de la media y los cuartiles pero no logre un codigo funcional, por eso priorice la paleta de colores. Con esto termina los desafios del aula 2.
 
 ![Grafica box plot](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.6.PNG)
+
+
+
+## Tercera Clase:
+
+**Mis respuestas de la clase 3 son:**
+
+   Desafios:
+    
+    Dar un vistazo a la base de datos del DANE, entender estas variables conceptualmente para entender mejor el contexto de esta base.
+    Organizar tu notebook para que tu proyecto quede mejor presentado.
+
+Resumen:
+
+![Resumen de los dos desafios](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/c32dcd084574f1252d18f68dc84499680609ff5a/Assets/soluci%C3%B3n_1/CapturaV3.1.PNG)
