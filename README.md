@@ -1,21 +1,60 @@
 # Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-
-Alura creo un evento en donde se enseña ciencia de datos llamado inmersion de datos. En cada sesión se dan desafios para resolver y aqui mostrare mis soluciones en el area.
+Alura creo un evento en donde se enseña ciencia de datos llamado inmersion de datos. En cada sesión se dan desafios para resolver y aqui mostrare mis soluciones de cada uno de los desafios.
 
 ## Primera Clase:
-**Mis respuestas a la clase 1 son.**
-Primero revise que los datos, después cree un nuevo dataframe con solo los datos de Barrio y area.
 
-![Primera imagen de solucion 1, la antelacion contiene mas informacion](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/c950c5e334fdd2bd459fd18b47436caf31fae5a9/Assets/soluci%C3%B3n_1/CapturaV1.1.PNG)
+**Mis respuestas de la clase 1 son:**
 
-En esta parte realice un nuevo Dataframe de agrupaciones con la funcion group by agrupando por barrios. También revise de que se realizara el proceso correcto con el uso de value counts, esto tambien para compararlo con el mismo dataframe pero con la funcion de media .mean.
 
-![Segunda imagen de solucion 1, la antelacion contiene mas informacion](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/d03975b527203f4c9b4089e986dd6cc66c13f995/Assets/soluci%C3%B3n_1/CapturaV1.2.PNG)
+   Desafios:
+   
+    Promedio de área de todos los inmuebles en los barrios en el dataset. El top 10.
 
-En esta parte se creo una nueva series usando la funcion .mean sobre el anterior dataframe. La funcion .mean devuelve la media de valores, pero use el atributo numeric_only para que solo utilizara los valores numericos, pero realmente no es necesario. Devuelve una series con indices como barrios y con la unica columna area como la media de area. Cuando se realiza un group by cualquier tipo de funcion como mean, max, min se realizara por cada columna por la cual fue agrupada.
+    Consultar otros datos estadísticos, conteo, mediana, valores mínimo y máximo.
 
-Por ultimo se uso plot.bar para crear la grafica de los barrios y sus promedios.
-![Tercera imagen de solucion 1, la antelacion contiene mas informacion](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/ebb0c40cf619558bcb42c0f33e938a2f94142b9c/Assets/soluci%C3%B3n_1/CapturaV1.3.PNG)
 
-En esta imagen de abajo se realizaron busquedas como baños min, baños mean, banos len(Para obtener el total de filas de baños), Habitaciones max(Para obtener el numero maximo de habitaciones). Tambien se podria haber usado sum sobre baños para obtener el total de baños. Hice promedio_area value counts para asegurarme que estan correctos los datos.
+Primero revise los datos, para consecuentemente realizar una agrupacion por barrios. Después se ordenan de mayor a menor y se obtienen solo los primeros 10. Por ultimo realice una grafica de barras.
+Anteriormente habia realizado otra grafica con todos los barrios pero la respuesta era muy poco entendible.
 
-![Image text](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/2faf30b878405e33d6d02ecfd19a1a490f60ea26/Assets/soluci%C3%B3n_1/CapturaV1.4.PNG)
+![Grafico de barras](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV1.1.PNG)
+
+Ahora lo que hice para terminar con los desafios de esta clase fue realizar 4 funciones para obtener 4 datos que se usan para realizar medidas estadisticas.
+
+![Funciones estadisticas](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV1.2.PNG)
+
+
+## Segunda Clase:
+
+**Mis respuestas de la clase 2 son:**
+
+
+   Desafios:
+    
+    Estudiar mejor el histograma de valores, seleccionar 3 tipos de inmuebles (Refinar el gráfico: Títulos, aumentar el tamaño de labels, colores, conclusión de la información)
+
+    Precio del m2 por barrio y hacer el gráfico más adecuado para esta nueva variable.
+
+
+Primeramente cree una nueva variable con precio millon. Esta nueva variables son los rangos de precio, los hice concorde la media, los cuartiles y la frecuencia de un grafico boxplot. Use lambda para crear estos rangos de valores.
+
+![Creando columna con rangos de valores](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.1.PNG)
+
+Ahora lo que hice fue crear un booleano de cada uno de los inmuebles y use estas condicionales para obtener un dataframe de solo estos tres inmuebles.
+
+![obteniendo dataframe con solo tres inmuebles](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.2.PNG)
+
+Con el uso de la nueva variable creo la grafica y en la grafica se ve la incedencia de los inmuebles por el rango de valores. Se edito el fondo, el tamaño de las labels y se uso una paleta de colores. Tambien se modificaron las labels de los dos ejes. 
+
+![grafica de frecuencia por tres tipos de inmuebles](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.3.PNG)
+
+Por ultimo realice mis conclusiones de la grafica. Con esto el primer desafio esta terminado. 
+
+![Conclusiones de la grafica](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.4.PNG)
+
+En este segundo desafio cree la variable m2 (Nota: Esta variable no la dividi por millon, despues fue hecha una nueva con esta caracteristica) y con esto obtuve la media agrupada por barrio de m2. Por lo demás consigue los 10 valores mas altos y los plasme en una grafica de barras. Viendo que este no era el mejor grafico para esta variable, hice el grafico boxplot. Para ser honesto no comprendia que el grafico boxplot daba tantos datos funcionales hasta la instruccion de los maestros.
+
+![Primera grafica de m2 barrio](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.5.PNG)
+
+Con esta nueva grafica utilice valor m2 millon y respete los demas datos de la anterior. Use la paleta de Colores Mako y agregue color a los fondos para resaltar la informacion y mejorar el visual. Las labels estan inclinadas de una forma un poco distinta a como me enseñaron en esta aula. Hubiera querido modificar los colores de la media y los cuartiles pero no logre un codigo funcional, por eso priorice la paleta de colores. Con esto termina los desafios del aula 2.
+
+![Grafica box plot](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/b68ccd95d50810918f097a80b95697cb433c4131/Assets/soluci%C3%B3n_1/CapturaV2.6.PNG)
