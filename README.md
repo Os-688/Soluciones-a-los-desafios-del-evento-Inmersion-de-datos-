@@ -3,11 +3,11 @@ Alura creo un evento en donde se enseña ciencia de datos llamado inmersion de d
 
 ## Tecnologias y Bibliotecas usadas:
 
---Python Google Colaboratory
---scikit-learn
---Pandas
---Seaborn
---Matplotlib
+* Python Google Colaboratory
+* scikit-learn
+* Pandas
+* Seaborn
+* Matplotlib
 
 ## Primera Clase:
 
