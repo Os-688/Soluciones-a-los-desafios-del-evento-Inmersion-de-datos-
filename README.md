@@ -118,3 +118,20 @@ La baseline de este modelo:
 Realizo un mapa de calor para poder distinguir las variables que usare para los datos del nuevo modelo. Este nuevo modelo lo hago con la intencion de poder decidir los datos que tendra ya que no pude hacerlo con division precio. La razón de ello es que el mapa de calor no la detecta. Los datos estan elegidos para habitaciones y tienen la mayor correlacion.
 
    ![Mapa de calor](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/3f809c147388dfde9055b360c1c0ced8ff068121/Assets/soluci%C3%B3n_1/CapturaV4.8.PNG)
+
+Es el mismo modelo que division precio en resumen las mismas funciones pero con la diferencia de que pude escoger las variables con mayor correlación para habitaciones por lo que resulto ser mas precisa que division precio. En las conclusiones con y sin datos flotantes hay informacion mas explicativa.
+
+*Trabajar más con los datos y crear nuevas variables:*
+
+Para realizar esta variable fue un proceso complicado. Lo resumire pero es un poco enrededoso. La variable es media de habitaciones por inmuebles en cada barrio.
+Lo primero que hice fue agrupar por barrio y obtener su sumatoria, con el objetivo de obtener el total de habitaciones.
+Lo segundo que hice fue reiniciar los indices del dataframe.
+Lo tercero que hice fue obtener la lista de barrios del mismo dataframe y convertirlo a un objeto lista.
+Lo cuarto que hice fue crear un bucle for para buscar el total de inmuebles por barrio y unirlos a una lista. Lo hice aprovechando la anterior lista.
+Lo quinto que hice fue crear un diccionario de valores de las dos listas: Barrio-total_inmuebles_barrio
+Lo sexto que hice fue crear la nueva variable "Media_habitaciones Barrio" y asignarle la columna barrios, despues con la funcion map y el diccionario reemplace cada key con su value.
+Lo septimo que hice fue reasignar a la "Media_habitaciones Barrio" la division de la columna de habitaciones(la cual es la suma total por barrio) y ella misma("Media_habitaciones Barrio")
+Y así se termino la creación de esta nueva variable.
+
+![Modelo con los nuevos datos](https://github.com/Os-688/Soluciones-a-los-desafios-del-evento-Inmersion-de-datos-/blob/da2de84bd02ded3219605a21d470b32341dbb35b/Assets/soluci%C3%B3n_1/CapturaV4.10.PNG)
+
